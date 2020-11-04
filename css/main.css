@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: auto;
+}
+
+/* Top navigation css */
+
+.top-nav{
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+}
+
+.top-nav ul{
+    display: grid;
+    grid-template-columns: repeat(3,auto) 1fr repeat(2,auto);
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    grid-gap:10px;
+}
+
+.top-nav ul li{
+    display: inline;
+    list-style: none;
+}
+
+.top-nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+.top-nav ul li img{
+    height: 16px;
+}
+
+#menu_icon img{
+    height: 24px;
+}
+
+#Title{
+    text-align: center;
+}
+
+#Title img{
+    height:34px;
+    padding-top: 8px;
+}
+
+.top-nav ul li button{
+    background-color:#33f;
+    border:none;
+    color: white;
+    border-radius: 5px;
+    padding:10px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+/* Bottom navigation css */
+
+.bottom-nav{
+    width: 100%;
+    border-top: 1px solid black;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+}
+
+.bottom-nav ul{
+    height: 59px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.bottom-nav ul li{
+    list-style: none;
+    text-align: center;
+}
+
+#ad_item1{
+    grid-column: 2;
+}
+
+.bottom-nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+/* Main context css */
+
+.wrap{
+    display: grid;
+    justify-content: center;
+}
+
+.container{
+    width: 1200px;
+    padding-top: 100px;
+    margin-bottom: 90px;
+}
+
+.main_info img{
+    width: 1200px;
+}
+
+.article_title{
+    display: grid;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.article_title h1{
+    width: 500px;
+    font-size: 35px;
+}
+
+#img_info{
+    width: 70%;
+    color: grey;
+    font-size: 14px;
+}
+
+.wrap_context{
+    display: grid;
+    justify-content: center;
+}
+
+.article_context{
+    width: 696px;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.text p{
+    padding-top: 20px;
+}
+
+.text p a{
+    color: #33f;
+}
+
+.article_context h1{
+    font-size: 18px ;
+    font-weight: 900;
+}
+.article_context h1 a{
+    color: black;
+}
+
+.share{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: auto 1fr repeat(6,auto);
+    grid-gap: 5px;
+    font-size: 16px;
+    padding-top: 0px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#start_ofshare{
+    display: grid;
+    justify-content: end;
+}
+
+.sub_ad{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 18px;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+
+.sub_ad a{
+    text-decoration: none;
+    color: #33f;
+}
+
+.graph{
+    margin-top: 30px;
+    padding-left: 100px;
+    position: relative;
+}
+
+.graph h1{
+    font-size: 20px;
+}
+
+#graph_info{
+    font-size: 14px;
+    color: grey;
+
+}
+
+.graph img{
+    margin-top: 10px;
+    width: 1060px;
+}
+
+.graph_notes{
+    position: absolute;
+    top: 225px;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 200px;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(2,auto);
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.graph_notes p{
+    width: 225px;
+}
+
+.video{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.video p{
+    color: grey;
+    font-size: 14px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.image{
+    /* position: absolute; */
+    margin-top: 20px;
+}
+
+.image p{
+    font-size: 14px;
+    color: grey;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.image img{
+    width: 696px;
+}
+
+#lastp{
+    font-size: 14px;
+    color: grey;
+}
+
+#lastp a{
+    color: grey;
+}
+
+.comments{
+    margin-top: 20px;
+    display:grid;
+    grid-template-columns: auto 1fr repeat(3,auto);
+    grid-gap: 5px;
+}
+
+.comments button{
+    width: 500px;
+    padding: 5px;
+    background-color: #33f;
+    border: #33f;
+    color: white;
+    font-weight: 900;
+    border-radius: 5px;
+}
+
+
+#More_p{
+    font-size:20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.more{
+    margin-bottom: 300px;
+}
+
+.more_extra{
+    float: left;
+    margin-top: 20px;
+    width: 877px;
+    border-top: 1px solid black;
+}
+
+.grid_ofnotes{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 10px;
+}
+
+.note{
+    width: 279px;
+}
+
+.note img{
+    width: 279px;
+}
+
+#poster{
+    font-size: 10px;
+    color: grey;
+    text-align: end;
+}
+
+#note_title{
+    font-size: 18px;
+}
+
+#date{
+    font-size: 12px;
+    color: grey;
+}
+
+#popular{
+    float: right;
+    width: 292px;
+}
+
+#most_popularlist{
+    list-style: none;
+}
+
+#most_popularlist li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top:1px solid rgba(0, 0, 0, 0.3)
+}
+
+#most_popularlist li a{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.footer{
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    border-top:2px solid black;
+}
+
+.footer img{
+    width: 191px;
+    margin-top: 10px;
+}
+
+#goto{
+    text-align: end;
+    display: block;
+    font-size: 12px;
+    color: #33f;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.listgrid{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+}
+
+.listgrid ul{
+    list-style: none;
+}
+
+
+.listgrid ul li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.listgrid ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.listgrid ul li a strong{
+    font-size: 18px;
+}
+
+#subscribe_list{
+    border-left:1px solid rgba(0, 0, 0, 0.3) ;
+    padding-left: 15px;
+    height: 410px;
+}
+
+#for_border{
+    padding-bottom: 5px;
+    border-bottom:1px solid rgba(0, 0, 0, 0.3) ;
+}
+
+.list_title{
+    font-weight: 600;
+}
+
+.contact{
+    border-top:1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 5px;
+}
+
+.contact ul li{
+    list-style: none;
+    display: inline;
+    font-size: 12px;
+    padding-right: 5px;
+    color: grey;
+}
+
+.contact ul li a{
+    text-decoration: none;
+    color: grey;
+}
